@@ -29,19 +29,100 @@
         z-index: -999;
     }
 
-}
-/* @layer components{
-    .mood{
-        width: 30px;
-        height: 20px;
-        background-color: aqua;
+    #toggle{
+        display: block;
+        width: 45px;
+        height: 25px;
+        border-radius: 20px;
+        background-color:  #eaecff;
         position: relative;
     }
-    .mood::before{
+    #toggle::before{
+        background-color:#150a3a ;
         position: absolute;
-        content: "da";
-        top: 0%;
-        left: 0%;
-        
+        content: "";
+        top: 50%;
+        left: 30%;
+        transform: translate(-50%,-50%);
+        width: 20px;
+        height: 20px;
+        border-radius: 10px;
+        transition: all .3s linear;
     }
-} */
+    #mode:checked + #toggle::before{
+        left: 70%;
+    }
+
+    /* small-device-mood-btn */
+
+    #toggles{
+        display: block;
+        width: 45px;
+        height: 25px;
+        border-radius: 20px;
+        background-color:  #eaecff;
+        position: relative;
+    }
+    #toggles::before{
+        background-color:#150a3a ;
+        position: absolute;
+        content: "";
+        top: 50%;
+        left: 30%;
+        transform: translate(-50%,-50%);
+        width: 20px;
+        height: 20px;
+        border-radius: 10px;
+        transition: all .3s linear;
+    }
+
+    #modes:checked + #toggles::before{
+        left: 70%;
+    }
+
+    .ripple{
+        position: relative;
+        overflow: hidden;
+    }
+    .ripple::before{
+        z-index: -2;
+        transition: all .3s linear;
+        position: absolute;
+        content: "";
+        top : var(--pageY);
+        left : var(--pageX);
+        transform: translate(-50%,-50%);
+        width: 0px;
+        height: 0px;
+        border-radius: 100%;
+        background-color: #d8dcff;
+    }
+    .ripple:hover::before{
+        width: 300px;
+        height: 300px; 
+    }
+    /* small-device-ripple-button */
+    .index{
+        z-index:9999;
+    }
+    .ripples{
+        position: relative;
+        overflow: hidden;
+    }
+    .ripples::before{
+        transition: all .3s linear;
+        position: absolute;
+        content: "";
+        top: -50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 0px;
+        height: 0px;
+        border-radius: 100%;
+        background-color: #d8dcff;
+    }
+    .ripples:hover::before{
+        width: 200px;
+        height: 200px;
+    }
+}

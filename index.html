@@ -1,54 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- =====> favicon <===== -->
-     <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
-    <!-- =====> css-link <===== -->
-     <link rel="stylesheet" href="./input.css">
-     <!-- =====> box-icno-cdn <===== -->
-     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-     <!-- =====> google-font <===== -->
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- =====> favicon <===== -->
+   <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+   <!-- =====> css-link <===== -->
+   <link rel="stylesheet" href="./input.css">
+   <!-- =====> box-icno-cdn <===== -->
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   <!-- =====> google-font <===== -->
 
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet">
 
-    <title>Asaduzzaman</title>
+   <title>Asaduzzaman</title>
 
 </head>
-<body class="font-poppins bg-background-dark  text-font-primary capitalize h-[400vh]" >
-    <!-- =====>header-sectino <===== -->
-     <header class="w-full fixed top-0 left-0  ">
-        <nav class="blur-effect w-full flex justify-around items-center ">
-            <!-- =====> logo <===== -->
-            <img src="./assets/logo.png" alt="" class="w-20 drop-shadow-[5px]">
-            <!-- =====> navigation <===== -->
-             <div class="border rounded-3xl">
-                <ul class="flex justify-center items-center px-1 py-3 font-semibold ">
-                    <a href="#home" class="mx-5 border px-2 py-2 rounded-[6px]"><li>home</li></a>
-                    <a href="#about" class="mx-5 border px-2 py-2 rounded-[6px]"><li>about</li></a>
-                    <a href="#service" class="mx-5 border px-2 py-2 rounded-[6px]"><li>service</li></a>
-                    <a href="#myWork" class="mx-5 border px-2 py-2 rounded-[6px]"><li>My work</li></a>
-                    <a href="#contact" class="mx-5 border px-2 py-2 rounded-[6px]"><li>contact me</li></a>
-                </ul>
-             </div>
 
-             <!-- =====> dark-and-light-mood-toggle <===== -->
-             <div>
-                <input type="checkbox"  id="mode" class="invisible">
-                <label for="mode" class="mood"></label>
-             </div>
-        </nav>
-     </header>
+<body id="main" class="font-poppins   text-font-primary capitalize bg-background-dark">
+
+   <!-- =====>header-sectino <===== -->
+
+   <header class="w-full fixed top-0 left-0">
+
+      <nav class="blur-effect w-full flex justify-around items-center " id="nav">
+         <!-- =====> <logo> <===== -->
+
+         <img src="./assets/logo.png" alt="" class="w-20 drop-shadow-[5px]">
+
+         <!-- =====> </logo> <===== -->
+
+         <!-- =====> <navigation> <===== -->
+         <div class="hidden lg:block">
+            <ul class="  flex justify-center items-center px-1 py-3 font-semibold ">
+               <a href="#home"  id="animate1" class=" ripple mx-5  px-2 py-2 rounded-[6px]">
+                  <li class="z-10 hover:text-button-color ">home</li>
+               </a>
+               <a href="#about"  id="animate2" class=" ripple mx-5  px-2 py-2 rounded-[6px]">
+                  <li class="z-10 hover:text-button-color  ">about</li>
+               </a>
+               <a href="#service"  id="animate3" class=" ripple mx-5  px-2 py-2 rounded-[6px]">
+                  <li class="z-10 hover:text-button-color ">service</li>
+               </a>
+               <a href="#myWork"  id="animate4" class=" ripple mx-5  px-2 py-2 rounded-[6px]">
+                  <li class="z-10 hover:text-button-color">My work</li>
+               </a>
+               <a href="#contact" id="animate5" class=" ripple mx-5  px-2 py-2 rounded-[6px]">
+                  <li class="z-10 hover:text-button-color ">contact me</li>
+               </a>
+            </ul>
+         </div>
+         <!-- =====> </navigation> <===== -->
+
+         <!-- =====> <menu-for-small-device> <===== -->
+         
+            <div class="block lg:hidden absolute w-[60%] h-[100vh] top-0 right-[-80%] bg-background-dark transition-all duration-300 ease-linear " id="smNav">
+               
+               <ul class="  flex flex-col justify-center items-center px-1 py-3 font-semibold mt-[20%] gap-10">
+                     <!-- =====> <cross-icon> <===== -->
+
+                        <i class='bx bx-x text-[3rem] hover:rotate-45 transition-all ease-linear duration-300 rounded-full ' id="btn-cross"></i>
+
+                        <!-- =====> </cross-icon> <===== -->
+
+                  <a href="#home"  id="animateSm1" class="ripples mx-5  px-2 py-2 rounded-[6px]">
+                     <li class="index hover:text-button-color ">home</li>
+                  </a>
+                  <a href="#about"  id="animateSm2" class=" ripples mx-5  px-2 py-2 rounded-[6px]">
+                     <li class="index hover:text-button-color  ">about</li>
+                  </a>
+                  <a href="#service"  id="animateSm3" class=" ripples mx-5  px-2 py-2 rounded-[6px]">
+                     <li class="index hover:text-button-color ">service</li>
+                  </a>
+                  <a href="#myWork"  id="animateSm4" class=" ripples mx-5  px-2 py-2 rounded-[6px]">
+                     <li class="index hover:text-button-color">My work</li>
+                  </a>
+                  <a href="#contact" id="animateSm5" class=" ripples mx-5  px-2 py-2 rounded-[6px]">
+                     <li class="index hover:text-button-color ">contact me</li>
+                  </a>
+
+                  <!-- =====> <small-device-mode-button> <===== -->
+
+                     <div class=" block lg:hidden ">
+                        <input type="checkbox" id="modes" class="invisible w-0 h-0">
+                        <label for="modes" id="toggles"></label>
+                     </div>
+
+                  <!-- =====> </small-device-mode-button> ===== -->
+               </ul>
+            </div>
+            
+         <!-- =====> </menu-for-small-device> <===== -->
 
 
+         <!-- =====> <dark-and-light-mood-toggle> <===== -->
 
-     <main class="bg-background-light mt-[100px] ">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi rem placeat temporibus minima adipisci sed sunt quis ducimus laudantium alias! Quisquam quas odit delectus itaque nihil maxime autem laboriosam eutae n modi ipsam molestias sed! Consequuntur nobis laboreriam ipsam. Voluptatum cum, similique aspernt eos Earum, est facere ad ullam nemo quaerat aliquam similique aperiam itaque, ea porro at fugit architecto sed assumenda sint delectus. Laudantium cumque, pariatur enim repellat atque ipsa laboriosam expedita velit distinctio at aliquam ut dolore iure illo quibusdam sed sint fugiat maiores voluptas, ab aliquid nemo? Veniam optio, deserunt explicabo vitae architecto placeat blanditiis voluptatem, iste quidem ratione quae laboriosam aspernatur nulla incidunt nesciunt doloribus consequatur quaerat dolore tempora, eius laudantium eligendi adipisci aliquam magni. Earum necessitatibus vero rerum pariatur aperiam perspiciatis consequuntur. Voluptates quae illo facilis quidem nulla, qui sit unde blanditiis sed minima rem provident aspernatur, veritatis sint assumenda nobis totam quis voluptatibus ipsam exercitationem. Consequatur illo ad aliquam, beatae consequuntur aperiam cum laudantium alias dolore, autem placeat nobis fugiat? Pariatur consectetur quaerat repellendus, blanditiis iusto mollitia quam assumenda aliquam adipisci, autem accusantium esse voluptatum? Architecto aperiam dolore dolores distinctio? Natus quaerat quis nemo explicabo ipsa assumenda voluptatem, asperiores ratione, corporis libero rerum consequuntur, a obcaecati expedita esse tempore soluta dignissimos. Soluta deserunt aliquam minima dolorum consectetur quaerat ad, id illum quo expedita est assumenda. Voluptates distinctio labore nulla veniam ipsum nisi quidem sequi laborum suscipit consequatur qui quo accusantium molestias officiis assumenda fugit ipsam ducimus, rerum iure incidunt cum perspiciatis perferendis! Tenetur veniam reprehenderit nihil quibusdam corporis assumenda neque consequuntur aspernatur quaerat saepe doloribus quam doloremque velit temporibus tempore qui, optio quidem quis voluptate, fuga modi iste ut veritatis. Minima accusantium blanditiis nobis repudiandae cupiditate explicabo aperiam rerum recusandae iste suscipit harum voluptate asperiores maiores esse possimus inventore ipsa iure nemo quae veritatis, molestias officia? Ab vero quae inventore facilis molestias quam quia quidem ea porro eos eum ut, labore, laboriosam eligendi a iste totam quis? Quo esse libero et vitae quibusdam accusantium accusamus, sint labore, ad hic tenetur! Nisi voluptas sunt repellendus facilis veniam laborum impedit ullam eaque dolor consectetur. Officiis minus dolores consectetur vel, voluptatem quasi distinctio eligendi eveniet eum itaque amet perspiciatis deserunt? Delectus in hic sapiente ducimus non accusamus mollitia optio, vero facilis numquam ratione accusantium repudiandae quaerat, obcaecati exercitationem officia veritatis, ipsam suscipit? Incidunt cupiditate debitis numquam possimus illo. In consequuntur itaque ad vitae dolor eveniet praesentium provident cum sequi nisi dicta nobis non deleniti veniam nihil consequatur, inventore soluta dolore? Distinctio tenetur neque et reiciendis qui? Tempora reprehenderit modi sit corporis sed at deleniti enim vel adipisci reiciendis dolore qui totam praesentium natus magni quisquam magnam eius, facilis pariatur possimus labore dolorem doloribus consectetur. Eum vero maxime veritatis facilis recusandae velit. Accusamus pariatur, nisi minima vero sed illum quos officia hic.
-     </main>
-    <!-- =====> script-file-link <===== -->
-     <script src="./script.js"></script>
+         <div class=" hidden lg:block ">
+            <input type="checkbox" id="mode" class="invisible w-0 h-0">
+            <label for="mode" id="toggle"></label>
+         </div>
+         <div id="menu" class="block lg:hidden  mt-1.5 ">
+            <i class='bx bx-menu font-bold text-3xl  ' id="menu-btn"></i>
+         </div>
+         <!-- =====> </dark-and-light-mood-toggle> <===== -->
+
+      </nav>
+   </header>
+
+   <!-- =====> script-file-link <===== -->
+    <script type="module" src="./script.js"></script>
 </body>
+
 </html>
