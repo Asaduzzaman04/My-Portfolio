@@ -1,118 +1,375 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <!-- =====> favicon <===== -->
-   <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
-   <!-- =====> css-link <===== -->
-   <link rel="stylesheet" href="./input.css">
-   <!-- =====> box-icno-cdn <===== -->
-   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-   <!-- =====> google-font <===== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- =====>css<===== -->
+    <link rel="stylesheet" href="./input.css">
+    <!-- =====>box-icon-cdn<===== -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- =====>google-font-poopins<===== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- =====> favicon <===== -->
+    <link rel="shortcut icon" href="./images/dev-icon.png" type="image/x-icon">
 
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet">
-
-   <title>Asaduzzaman</title>
-
+    <title>Asaduzzzaman/Portfolio</title>
 </head>
 
-<body id="main" class="font-poppins   text-font-primary capitalize bg-background-dark">
-
-   <!-- =====>header-sectino <===== -->
-
-   <header class="w-full fixed top-0 left-0">
-
-      <nav class="blur-effect w-full flex justify-around items-center " id="nav">
-         <!-- =====> <logo> <===== -->
-
-         <img src="./assets/logo.png" alt="" class="w-20 drop-shadow-[5px]">
-
-         <!-- =====> </logo> <===== -->
-
-         <!-- =====> <navigation> <===== -->
-         <div class="hidden lg:block">
-            <ul class="  flex justify-center items-center px-1 py-3 font-semibold ">
-               <a href="#home"  id="animate1" class=" ripple mx-5  px-2 py-2 rounded-[6px]">
-                  <li class="z-10 hover:text-button-color ">home</li>
-               </a>
-               <a href="#about"  id="animate2" class=" ripple mx-5  px-2 py-2 rounded-[6px]">
-                  <li class="z-10 hover:text-button-color  ">about</li>
-               </a>
-               <a href="#service"  id="animate3" class=" ripple mx-5  px-2 py-2 rounded-[6px]">
-                  <li class="z-10 hover:text-button-color ">service</li>
-               </a>
-               <a href="#myWork"  id="animate4" class=" ripple mx-5  px-2 py-2 rounded-[6px]">
-                  <li class="z-10 hover:text-button-color">My work</li>
-               </a>
-               <a href="#contact" id="animate5" class=" ripple mx-5  px-2 py-2 rounded-[6px]">
-                  <li class="z-10 hover:text-button-color ">contact me</li>
-               </a>
-            </ul>
-         </div>
-         <!-- =====> </navigation> <===== -->
-
-         <!-- =====> <menu-for-small-device> <===== -->
-         
-            <div class="block lg:hidden absolute w-[60%] h-[100vh] top-0 right-[-80%] bg-background-dark transition-all duration-300 ease-linear " id="smNav">
-               
-               <ul class="  flex flex-col justify-center items-center px-1 py-3 font-semibold mt-[20%] gap-10">
-                     <!-- =====> <cross-icon> <===== -->
-
-                        <i class='bx bx-x text-[3rem] hover:rotate-45 transition-all ease-linear duration-300 rounded-full ' id="btn-cross"></i>
-
-                        <!-- =====> </cross-icon> <===== -->
-
-                  <a href="#home"  id="animateSm1" class="ripples mx-5  px-2 py-2 rounded-[6px]">
-                     <li class="index hover:text-button-color ">home</li>
-                  </a>
-                  <a href="#about"  id="animateSm2" class=" ripples mx-5  px-2 py-2 rounded-[6px]">
-                     <li class="index hover:text-button-color  ">about</li>
-                  </a>
-                  <a href="#service"  id="animateSm3" class=" ripples mx-5  px-2 py-2 rounded-[6px]">
-                     <li class="index hover:text-button-color ">service</li>
-                  </a>
-                  <a href="#myWork"  id="animateSm4" class=" ripples mx-5  px-2 py-2 rounded-[6px]">
-                     <li class="index hover:text-button-color">My work</li>
-                  </a>
-                  <a href="#contact" id="animateSm5" class=" ripples mx-5  px-2 py-2 rounded-[6px]">
-                     <li class="index hover:text-button-color ">contact me</li>
-                  </a>
-
-                  <!-- =====> <small-device-mode-button> <===== -->
-
-                     <div class=" block lg:hidden ">
-                        <input type="checkbox" id="modes" class="invisible w-0 h-0">
-                        <label for="modes" id="toggles"></label>
-                     </div>
-
-                  <!-- =====> </small-device-mode-button> ===== -->
-               </ul>
+<body  class="font-poppins overflow-x-hidden font-medium selection:bg-[#dfdfdf]  ">
+    <div class="nav-bg fixed -z-10 translate-y-[-90%] top-0 right-0 items-center w-[90%]">
+        <img src="./images/header-bg-color.png" class=" w-full">
+    </div>
+    <!-- =====>navigarion-section-start<===== -->
+    <nav id="home" class=" top-0 left-0  flex justify-around items-center  py-2 lg:px-[8px] xl:px-[8%] text-xl z-20 ">
+        <!-- ====>logo<===== -->
+        <img src="./images/logo-light.png" class="w-28 cursor-pointer">
+        <!-- =====>pageicnation<===== -->
+        <ul
+            class="hidden md:flex  gap-6 capitalize px-5 py-2 rounded-full  font-medium bg-[#EBF4F6] shadow-[2px_2px_1px_#dfdfdf] ">
+            <li><a href="#home" id="underline-effect">home</a></li>
+            <li><a href="#about" id="underline-effect">about me</a></li>
+            <li><a href="#work" id="underline-effect">my work</a></li>
+            <li><a href="#service" id="underline-effect">service</a></li>
+            <li><a href="#contact" id="underline-effect">contact</a></li>
+        </ul>
+        <!-- =====>contact-btn-and-mode<===== -->
+        <div class="contact-btn mode flex justify-center items-center gap-2 lg:gap-5 ">
+            <div class="mode cursor-pointer transition-all duration-200 p-1 rounded-full  hover:bg-gray-100"
+                id="mode-body">
+                <img src="./images/moon_icon.png" class="w-5 lg:w-6" id="mode">
             </div>
-            
-         <!-- =====> </menu-for-small-device> <===== -->
 
+            <a href="#contact"
+                class="hidden  lg:flex bg-[#EBF4F6] font-medium   px-3 py-1.5 rounded-full shadow-[2px_2px_1px_#dfdfdf] lg:px-5 lg:py-2"><button
+                    class="flex items-center gap-2 capitalize z-40">contact <img src="./images/arrow-icon.png"
+                        class="w-2 transition-all duration-200"></button></a>
 
-         <!-- =====> <dark-and-light-mood-toggle> <===== -->
+            <!-- =====>small-nav-menu-icon<===== -->
+            <div class="main-menu block md:hidden">
+                <button id="menu-btn" class="menu-btn  transition-all duration-200 p-2 rounded-full hover:bg-gray-100 ">
+                    <img src="./images/menu-black.png" class="w-5">
+                </button>
+                <!-- =====>side-menu<===== -->
+                <ul id="side-menu"
+                    class=" font-medium capitalize fixed h-screen border top-0 right-[-100%] flex flex-col items-center py-20  px-20 bg-[#3498db] transition-all duration-300 text-center md:hidden">
+                    <button id="close-menu"
+                        class=" absolute top-4 right-10  p-2  rounded-border hover:bg-gray-200 transition-all duration-300">
+                        <img src="./images/close-black.png" class="w-5 " id="close-menu">
+                    </button>
+                    <li class="list-close mt-10 px-3 py-1.5 rounded-[5px]"><a href="#home">home</a></li>
+                    <li class="list-close mt-10 px-3 py-1.5 rounded-[5px]"><a href="#about">about</a></li>
+                    <li class="list-close mt-10 px-3 py-1.5 rounded-[5px]"><a href="#work">my work</a></li>
+                    <li class="list-close mt-10 px-3 py-1.5 rounded-[5px]"><a href="#service">service</a></li>
+                    <li class="list-close mt-10 px-3 py-1.5 rounded-[5px]"><a href="#contact">contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- =====>navigarion-section-end<===== -->
 
-         <div class=" hidden lg:block ">
-            <input type="checkbox" id="mode" class="invisible w-0 h-0">
-            <label for="mode" id="toggle"></label>
-         </div>
-         <div id="menu" class="block lg:hidden  mt-1.5 ">
-            <i class='bx bx-menu font-bold text-3xl  ' id="menu-btn"></i>
-         </div>
-         <!-- =====> </dark-and-light-mood-toggle> <===== -->
+    <!-- =====>haeader-secton-start<====== -->
+    <div 
+        class="hero-section h-[100vh] md:h-[80vh]  flex flex-col justify-center text-center items-center md:gap-10 ">
+        <div class="image w-40 md:w-48 lg:w-60 rounded-border shadow-lg">
+            <img src="./images/my-image.png" class="rounded-border ">
+        </div>
+        <!-- =====>intro<====== -->
+        <div class="intro mt-3 px-5 w-full md:w-4/5 lg:w-5/6 xl:3/6">
 
-      </nav>
-   </header>
+            <h3 class="flex justify-center items-center text-xl capitalize mb-5 m-bases">hi i'm <span
+                    class="text-bold text-3xl mx-2">asaduzzzaman </span> <img src="./images/hand-icon.png" class="w-6">
+            </h3>
 
-   <!-- =====> script-file-link <===== -->
+            <h1 class="text-center text-xl">I'm a <span class="text-3xl"> Front-End Web Developer </span> skilled in
+                modern web technologies.I recently completed a web development course at <span class="font-bold">ITBI,
+                    CUET.</span>I'm passionate about crafting efficient and visually appealing user interfaces. Let's
+                create something amazing together!</h1>
+
+        </div>
+
+        <!-- =====contact-btn<===== -->
+        <div class="hero-contect mt-10 md:mt-5 flex flex-col md:flex-row gap-4 md:gap-8 lg:gap-15 ">
+            <button
+                class="border-[1px] border-[#6d659e] px-5 py-2 rounded-full  text-white shadow-sm transition-all duration-300 bg-gridiant-btn"><a
+                    href="#contact" class="flex justify-center items-center text-center">contact me <img
+                        src="./images/right-arrow-white.png" class="w-7 ml-1"></a>
+            </button>
+
+            <button id="project-btn"
+                class=" border-[1px] border-[#b9b8c0] hover:border-[#2a2468] px-5 py-2 rounded-full  text-[#130f40] hover:text-[#dfdfdf] shadow-sm transition-all duration-500"><a
+                    href="./assets/Asaduzzaman.pdf" download
+                    class="flex justify-center items-center text-center ">download cv<i
+                        class='bx bx-download ml-2 text-2xl'></i></a>
+
+            </button>
+
+        </div>
+    </div>
+    <!-- =====>haeader-secton-end<====== -->
+
+    <!-- =====>about-section-start<===== -->
+    <div class="about-container w-full  text-center px-[2%] py-[2%] lg:p-[10%]  " id="about">
+        <div class="about-text flex flex-col justify-center items-center gap-3">
+            <h2 class="text-xl lg:text-2xl capitalize">introduction</h2>
+            <h2 class="text-4xl capitalize " id="underline-effect">about me</h2>
+        </div>
+        <div class="about-element flex flex-col justify-center items-center gap-6 md:flex-row mt-10 ">
+            <!-- =====>side-image<===== -->
+            <div class="about-image w-[60%] md:w-[50%] lg:w-[35%]    rounded-medium  relative shadow-base">
+                <img src="./images/side-flex.jpg"
+                    class="rounded-medium transition-all duration-300 ease-linear hover:opacity-85 hover:scale-105  ">
+                <div
+                    class="circular-text w-28 h-28 lg:w-32 lg:h-32 aspect-square rounded-border  absolute bg-white -bottom-5 -right-5 ">
+                    <img src="./images/circular-text.png" class="w-full animate-round">
+                    <img src="./images/dev-icon.png"
+                        class="w-[40%] absolute top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%]">
+                </div>
+            </div>
+            <!-- =====>side-about-info<===== -->
+            <div
+                class="about-works p-[5%] w-full lg:w-[80%]  flex flex-col justify-center items-center md:items-start gap-4 mt-5 ">
+                <!-- ======>intro-section<===== -->
+                <div class="intro-text tex-center md:text-start my-3 md:my-0  lg:mb-10 ">
+                    As a creative problem solver with a passion for technology, I thrive on turning complex challenges
+                    into intuitive digital experiences. My journey as a Front-End Web Developer is driven by a deep
+                    commitment to staying at the forefront of modern web technologies.I’m dedicated to creating clean,
+                    efficient, and aesthetically pleasing user interfaces that not only meet the needs of users but also
+                    exceed client expectations.
+                </div>
+                <!-- =====>technology-usage-section<===== -->
+                <ul
+                    class="technology-use text-start flex flex-col md:grid md:grid-cols-3 justify-center  items-center md:items-start  gap-5 md:justify-around  ">
+
+                    <li
+                        class="language px-5 transition-all duration-500 cursor-pointer border-[2px] border-[#dfdfdf] rounded-medium hover:shadow-[4px_4px_0px_#0f0f0f] w-full hover:-translate-y-2 hover:bg-[#74b9ff] h-full hover:border-[#74b9ff] bg-[#EBF4F6]">
+                        <img src="./images/code-icon.png" class="w-8 my-5">
+                        <p class="font-bold capitalize">languages</p>
+                        <p class="capitalize my-5">html, css, tailwindcss, javascript, react.js. </p>
+                    </li>
+                    <li
+                        class="eudcation px-5 transition-all duration-500 cursor-pointer border-[2px] border-[#dfdfdf] rounded-medium hover:shadow-[4px_4px_0px_#0f0f0f] w-full hover:-translate-y-2 hover:bg-[#74b9ff] h-full hover:border-[#74b9ff] bg-[#EBF4F6]">
+                        <img src="./images/edu-icon.png" class="w-8 my-5">
+
+                        <p class="font-bold capitalize">education</p>
+                        <p class="capitalize my-5">B.B.A in Management,<br>Currently studying</p>
+
+                    </li>
+                    <li
+                        class="project px-5 transition-all duration-500 cursor-pointer border-[2px] border-[#dfdfdf] rounded-medium hover:shadow-[4px_4px_0px_#0f0f0f] w-full hover:-translate-y-2 hover:bg-[#74b9ff] h-full hover:border-[#74b9ff] bg-[#EBF4F6]">
+                        <img src="./images/project-icon.png" class="w-8 my-5">
+
+                        <p class="font-bold capitalize">project</p>
+                        <p class="capitalize my-5">buid more than 5 project</p>
+                    </li>
+                </ul>
+                <!-- =====>tools-section<===== -->
+                <div class="tools  mt-5  w-full flex flex-col justify-start items-start">
+                    <h3
+                        class="px-5 py-2 capitalize font-bold  text-start border flex justify-center items-center rounded-full bg-[#EBF4F6] shadow-base">
+                        tools i use
+                        <i class='bx bx-right-arrow-alt font-bold text-3xl rotate-90 '></i>
+                    </h3>
+                    <div class="tools-icons flex flex-col justify-center items-center  mt-10 md:flex-row w-full ">
+                        <div class="tools-image one  w-full flex justify-around mb-5 ">
+                            <img src="./images/vscode.png"
+                                class="w-16 drop-shadow-[2px_2px_2px_#2980b9]  animate-bounce1">
+                            <img src="./images/firebase.png"
+                                class="w-16 drop-shadow-[2px_2px_2px_#f39c12]  animate-bounce2">
+                            <img src="./images/sql.png" class="w-16 drop-shadow-[2px_2px_2px_#006266] animate-bounce3">
+                        </div>
+                        <div class="tools-image two  w-full flex justify-around mb-5 ">
+                            <img src="./images/npm.png" class="w-16 drop-shadow-[2px_2px_2px_#130f40] animate-bounce4">
+                            <img src="./images/figma.png"
+                                class="w-16 drop-shadow-[2px_2px_2px_#ff7675] animate-bounce5">
+                            <img src="./images/git.png" class="w-16 drop-shadow-[2px_2px_2px_#e84118] animate-bounce6">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- =====>about-section-end<===== -->
+
+    <!-- =====>my-portfolio-start<===== -->
+    <div class="service-section   text-center px-[4%] py-[2%] lg:px-[10%]" id="work">
+        <div class="service-intro flex flex-col justify-center items-center">
+            <h2 class="text-xl capitalize md:text-2xl" id="underline-effect">my Portfolio</h2>
+            <p class="text-4xl mt-5">My latest work</p>
+            <h2 class="mt-6 text-lg md:text-xl lg:w-2/3 mb-5">Welcome to my web development Portfolio! Explore a
+                collection
+                of projects showcasign my experitse in Front-End development</h2>
+        </div>
+        <!-- =====>work-showcase<===== -->
+        <div
+            class="porject px-[6%] md:px-[3%] flex flex-col  justify-center items-center md:grid md:grid-cols-2 gap-5 lg:flex lg:flex-row">
+            <!-- =====>project-1<===== -->
+            <div
+                class="porject-one my-3 w-full  bg-[#EBF4F6] hover:bg-[#74b9ff] p-5 rounded-medium hover:shadow-[4px_4px_0px_#000] hover:-translate-y-1 transition-all duration-500 ">
+                <div class="flex flex-col justify-start items-start gap-2">
+                    <img src="./images/work-1.png" class="w-full h-60 rounded-medium shadow-sm">
+                    <p class="text-2xl">web design</p>
+                    <p class="text-xl">Front-End project</p>
+                    <a class="flex justify-start items-center gap-1  pl-2 pr-5 py-1 rounded-[17px] font-bold text-lg hover:text-[#EBF4F6]"
+                        href="https://linkup-social.netlify.app/" target="_blank" id="project-btn">See project <i
+                            class='bx bx-chevrons-right font-bold text-3xl'></i></a>
+                </div>
+            </div>
+            <!-- =====>project-2<===== -->
+            <div
+                class="porject-one my-3 w-full  bg-[#EBF4F6] hover:bg-[#74b9ff] p-5 rounded-medium hover:shadow-[4px_4px_0px_#000] hover:-translate-y-1 transition-all duration-500 ">
+                <div class="flex flex-col justify-start items-start gap-2">
+                    <img src="./images/work-2.png" class="w-full h-60 rounded-medium shadow-sm">
+                    <p class="text-2xl">web design</p>
+                    <p class="text-xl">Front-End project</p>
+                    <a class="flex justify-start items-center gap-1  pl-2 pr-5 py-1 rounded-[17px] font-bold text-lg hover:text-[#EBF4F6]"
+                        href="" id="project-btn">See project <i class='bx bx-chevrons-right font-bold text-3xl'></i></a>
+                </div>
+            </div>
+            <!-- =====>project-3<===== -->
+            <div
+                class="porject-one my-3 w-full  bg-[#EBF4F6] hover:bg-[#74b9ff] p-5 rounded-medium hover:shadow-[4px_4px_0px_#000] hover:-translate-y-1 transition-all duration-500 ">
+                <div class="flex flex-col justify-start items-start gap-2">
+                    <img src="./images/work-3.png" class="w-full h-60 rounded-medium shadow-sm">
+                    <p class="text-2xl">web design</p>
+                    <p class="text-xl">Front-End project</p>
+                    <a class="flex justify-start items-center gap-1  pl-2 pr-5 py-1 rounded-[17px] font-bold text-lg hover:text-[#EBF4F6]"
+                        href="" id="project-btn">See project <i class='bx bx-chevrons-right font-bold text-3xl'></i></a>
+                </div>
+            </div>
+            <!-- =====>project-4<===== -->
+            <div
+                class="porject-one my-3 w-full  bg-[#EBF4F6] hover:bg-[#74b9ff] p-5 rounded-medium hover:shadow-[4px_4px_0px_#000] hover:-translate-y-1 transition-all duration-500 ">
+                <div class="flex flex-col justify-start items-start gap-2">
+                    <img src="./images/work-4.png" class="w-full h-60 rounded-medium shadow-sm">
+                    <p class="text-2xl">web design</p>
+                    <p class="text-xl">Front-End project</p>
+                    <a class="flex justify-start items-center gap-1  pl-2 pr-5 py-1 rounded-[17px] font-bold text-lg hover:text-[#EBF4F6]"
+                        href="" id="project-btn">See project <i class='bx bx-chevrons-right font-bold text-3xl'></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- =====>my-portfolio-end<===== -->
+
+    <!-- =====>service-section-start<===== -->
+    <div class="service-section   text-center px-[4%] py-[2%] lg:px-[10%] mt-12 " id="service">
+        <div class="service-intro flex flex-col justify-center items-center mb-10 ">
+            <h2 class="text-xl capitalize md:text-2xl">what i offer</h2>
+            <p class="text-4xl mt-5" id="underline-effect">My services</p>
+        </div>
+        <!-- =====>work-showcase<===== -->
+        <div
+            class="porject px-[6%] md:px-[3%] flex flex-col  justify-center items-center md:grid md:grid-cols-2 gap-5 lg:flex lg:flex-row">
+            <!-- =====>project-1<===== -->
+            <div
+                class="porject-one my-3 w-full  bg-[#EBF4F6] hover:bg-[#74b9ff] p-5 rounded-medium hover:shadow-[4px_4px_0px_#000] hover:-translate-y-1 transition-all duration-500 ">
+                <div class="flex flex-col justify-start items-start gap-5 ">
+                    <img src="./images/web-icon.png" class=" w-14 rounded-medium shadow-sm mb-2">
+                    <p class="text-2xl mb-7">web design</p>
+                    <p class="text-lg text-start">Web design is the art of creating visually appealing, user-friendly
+                        websites that deliver seamless digital experiences.</p>
+                    <a class="flex justify-start items-center gap-1  pl-2 pr-5 py-1 rounded-[17px] font-bold text-lg hover:text-[#EBF4F6]"
+                        href="" id="project-btn">See more <i class='bx bx-chevrons-right font-bold text-3xl'></i></a>
+                </div>
+            </div>
+            <!-- =====>project-2<===== -->
+            <div
+                class="porject-one my-3 w-full  bg-[#EBF4F6] hover:bg-[#74b9ff] p-5 rounded-medium hover:shadow-[4px_4px_0px_#000] hover:-translate-y-1 transition-all duration-500 ">
+                <div class="flex flex-col justify-start items-start gap-5 ">
+                    <img src="./images/graphics-icon.png" class=" w-14 rounded-medium shadow-sm mb-2">
+                    <p class="text-2xl">grapic design</p>
+                    <p class="text-lg text-start ">Graphic design is the craft of visual communication, combining
+                        images, typography, and color to convey messages. It turns ideas into compelling visual
+                        narratives.</p>
+                    <a class="flex justify-start items-center gap-1  pl-2 pr-5 py-1 rounded-[17px] font-bold text-lg hover:text-[#EBF4F6]"
+                        href="" id="project-btn">See more <i class='bx bx-chevrons-right font-bold text-3xl'></i></a>
+                </div>
+            </div>
+            <!-- =====>project-3<===== -->
+            <div
+                class="porject-one my-3 w-full  bg-[#EBF4F6] hover:bg-[#74b9ff] p-5 rounded-medium hover:shadow-[4px_4px_0px_#000] hover:-translate-y-1 transition-all duration-500 ">
+                <div class="flex flex-col justify-start items-start gap-5 ">
+                    <img src="./images/ui-icon.png" class=" w-14 rounded-medium shadow-sm mb-2">
+                    <p class="text-2xl">UX/UI design</p>
+                    <p class="text-lg text-start">UX/UI design focuses on creating intuitive and engaging user
+                        experiences by optimizing the interface for usability,aesthetics, and seamless interaction.</p>
+                    <a class="flex justify-start items-center gap-1  pl-2 pr-5 py-1 rounded-[17px] font-bold text-lg hover:text-[#EBF4F6]"
+                        href="" id="project-btn">See more <i class='bx bx-chevrons-right font-bold text-3xl'></i></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- =====>service-section-end<===== -->
+
+    <!-- =====>contact-sectio-start<=====  -->
+
+    <div class="contact-section ] bg-[url('./images/footer-bg-color.png')] scroll-mt-20 bg-center bg-cover bg-no-repeat  text-center px-[4%] py-[2%] lg:px-[10%]   "
+        id="contact">
+        <div class=" flex flex-col justify-center items-center mb-10 ">
+            <h2 class="text-xl capitalize ">connect with me</h2>
+            <p class="text-4xl mt-5" id="underline-effect">Get in touch</p>
+            <p class="mt-6 text-lg md:text-xl lg:w-2/3 mb-5">Ready to bring your vision to life? Let's collaborate and
+                create something extraordinary together. Reach out, and let's turn your ideas into reality!</p>
+        </div>
+
+        <!-- =====>email-form-section-start<===== -->
+        <form action=""  class=" px-[5%] md:px-[15%] lg:px-[30%]  ">
+            <div class="grid  grid-cols-1 gap-5 md:grid-cols-2 justify-center items-center ">
+                
+
+                <input type="text" name="name" placeholder="enter your name" required
+                    class="px-3 py-5 rounded-medium outline-none shadow-[0px_0px_2px_#0f0000] placeholder:capitalize">
+
+                <input type="email" name="email" placeholder="enter your email" required
+                    class="px-3 py-5 rounded-medium outline-none shadow-[0px_0px_2px_#0f0000] placeholder:capitalize">
+                <textarea
+                    class=" border-none outline-none px-3 py-5 rounded-medium text-[#010202] shadow-[0px_0px_2px_#0f0000] md:col-span-2"
+                    rows="6" name="message" placeholder="Enter your massage" required></textarea>
+            </div>
+            <button type="submit" id="project-btn"
+                class=" mt-10 text-2xl border mx-auto flex justify-center items-center gap-2 px-3 py-2 rounded-full bg-[#EBF4F6] hover:text-[#dfdfdf] shadow-sm">submit
+                <i class='bx bx-send '></i></button>
+        </form>
+        <!-- =====>email-form-section-end<===== -->
+
+    </div>
+
+    <!-- =====>contact-sectio-end<=====  -->
+
+    <!-- =====>footer-section-start<===== -->
+            <div class="footer-section mt-10 text-center px-[10%] py-[2%] lg:px-[15%]">
+
+                <div class="e-mail my-16 flex flex-col  gap-8 justify-center items-center ">
+                    <img src="./images/logo-light.png" class="w-40">
+                    <div class="mail flex justify-center items-center gap-2">
+                        <img src="./images/mail_icon.png" class="w-5">
+                        <p class="font-bold">zamanasad0000@gmail.com</p>
+                    </div>
+                </div>
+                <div class="right my-16 border-t-2 px-4 border-[#000] flex flex-col md:flex-row justify-center items-center md:justify-between gap-10 ">
+                    <div class="copyright mt-10">
+                        © 2024 Asaduzzaman! All rights reserved.
+                    </div>
+                    <div class="socials md:mt-10">
+                        <ul class="flex justify-between items-center gap-5">
+                            <li class="hover:-translate-y-2 transition-all duration-500 font-bold hover:text-[#130f40]"><a href="https://github.com/Asaduzzaman04" target="_blank">GitHub</a></li>
+                            <li class="hover:-translate-y-2 transition-all duration-500 font-bold hover:text-[#130f40]"><a href="https://www.linkedin.com/in/asaduzzaman-dev?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn</a></li>
+                            <li class="hover:-translate-y-2 transition-all duration-500 font-bold hover:text-[#130f40]"><a href="https://x.com/Asaduzzaman055" target="_blank">Twitter</a></li>
+                        
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+    <!-- =====>footer-section-end<===== -->
+
+    <!-- =====>script-file-link<===== -->
     <script type="module" src="./script.js"></script>
 </body>
 
